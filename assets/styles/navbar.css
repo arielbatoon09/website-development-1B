@@ -6,13 +6,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 20px;
+  padding: 24px 24px;
+  color: #FFFFFF;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .nav-links li {
@@ -22,4 +23,41 @@
 .nav-links a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    background: #333333;
+    top: 60px;
+    left: 0;
+    padding-bottom: 20px;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .menu-toggle:checked~.nav-links {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    padding: 24px 24px;
+  }
 }

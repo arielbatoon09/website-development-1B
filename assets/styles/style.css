@@ -11,6 +11,7 @@ Utils is a common style that can be used anytime.
 
 @import "button.css";
 @import "navbar.css";
+@import "hero-banner.css";
 
 * {
   margin: 0;
