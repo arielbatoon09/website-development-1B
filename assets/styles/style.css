@@ -4,14 +4,18 @@ sm: 640px - mobile phone size
 md: 768px - Tablet size
 lg: 1024px - Laptop standard size
 xl: 1280px -- larger wide desktop size
-
-Utils is a common style that can be used anytime.
 */
 
-
+/* Reusable Styles */
 @import "button.css";
+@import "card.css";
+
+/* Section Styles */
 @import "navbar.css";
 @import "hero-banner.css";
+@import "services.css";
+@import "footer.css";
+
 
 * {
   margin: 0;
